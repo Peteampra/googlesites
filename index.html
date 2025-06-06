@@ -14,10 +14,13 @@
       background: #fafafa;
     }
     #typed-text {
+display: block;
+      width: 100%;
+      max-width: 600px; /* Adjust box width */
       border-right: 2px solid #333;
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
+      overflow-wrap: break-word; /* Allow wrapping mid-word if needed */
+      word-wrap: break-word;
+      white-space: normal; /* Allow wrapping */
       animation: blink-caret 0.75s step-end infinite;
     }
 
